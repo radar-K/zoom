@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}"], // Ser till att Tailwind genomsöker dessa filer för klasser
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        coolBlue: '#00053D', // Din nya färg
+      },
+    },
   },
   plugins: [],
-}
-
+};
